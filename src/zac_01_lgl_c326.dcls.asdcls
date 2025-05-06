@@ -1,0 +1,15 @@
+@EndUserText.label: 'Acess Control - Literal'
+@MappingRole: true
+define role ZAC_01_LGL_C326 {
+    grant
+        select
+            on
+                zcds_33_log_c326
+                    where
+                        CountryCode = 'US';
+                        
+                        
+    grant select on zcds_34_log_c326
+      where Status = 'N';                     
+                        
+}

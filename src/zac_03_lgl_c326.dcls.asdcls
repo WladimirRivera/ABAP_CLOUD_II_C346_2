@@ -1,0 +1,14 @@
+@EndUserText.label: 'Inheritance'
+@MappingRole: true
+define role ZAC_03_LGL_C326 {
+    grant
+        select
+            on
+                zcds_35_log_c326
+//                    where inheriting conditions from entity zcds_34_log_c326;
+
+        where inherit ZAC_01_LGL_C326
+         for grant select on zcds_34_log_c326
+         or Status = 'P';
+                        
+}

@@ -1,0 +1,11 @@
+@EndUserText.label: 'Aspect PFCG'
+@MappingRole: true
+define role ZAC_04_LGL_C346 {
+    grant 
+        select
+            on
+                zcds_36_log_c326
+                    where
+                        (CarrierId) = aspect pfcg_auth(ZAOCARR_ID, ZAFCARR_ID, ACTVT = '03');
+                        
+}
